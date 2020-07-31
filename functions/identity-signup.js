@@ -1,4 +1,4 @@
-onst stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const { faunaFetch } = require('./utils/fauna');
 
 exports.handler = async (event) => {
